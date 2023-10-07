@@ -1,0 +1,35 @@
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 425px;
+.main {
+  position: relative;
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 2rem;
+  min-height: 97vh;
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 1rem;
+  }
+
+  table,
+  th,
+  td {
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 12px;
+    }
+  }
+
+  table {
+    width: min-content;
+    max-width: 600px;
+    min-width: 200px;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border-spacing: 0px;
+  }
+}

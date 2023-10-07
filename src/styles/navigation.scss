@@ -1,0 +1,26 @@
+$breakpoint-tablet: 768px;
+.navigation {
+  position: absolute;
+  right: 50px;
+
+  &-container {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+
+    &-item {
+      a {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0093fe;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-tablet) {
+    top: 75px;
+    right: 10px;
+    a {
+      font-size: 16px;
+    }
+  }
+}
